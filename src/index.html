@@ -7,12 +7,12 @@
         <!-- Font Awesome CDN -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <title>Document</title>
+        <title>Pouchcare | Digital Marketing, SEO, and Web Development Experts</title>
         <link rel="stylesheet" href="./output.css" />
     </head>
     <body>
         <!-- Header Section Start -->
-        <header class="bg-black text-white p-4">
+        <header class="bg-black text-white p-4 sticky top-0 z-50">
             <!-- Mobile Menu -->
              <div class="flex justify-between items-center md:hidden">
                 <div class="">
@@ -30,8 +30,8 @@
             <!-- Mobile Menu End -->
 
             <!-- Mobile Menu Dropdown -->
-            <div id="mobile-menu" class="hidden p-4">
-                <div class="flex flex-col gap-4 mt-4 text-lg font-medium">
+            <div id="mobile-menu" class="hidden absolute top-17 left-0 w-full bg-black/50 z-50 px-4 pt-5 pb-10 space-y-2 transition-all duration-300">
+                <div class="flex flex-col gap-4 text-lg font-medium">
                     <a href="#" class="text-white hover:text-[#c5ff00]">Home</a>
                     <a href="#" class="text-white hover:text-[#c5ff00]">About Us</a>
                     <a href="#" class="text-white hover:text-[#c5ff00]">Services</a>
@@ -74,6 +74,17 @@
             <!-- Desktop Menu End -->
         </header>
         <!-- Header Section End -->
+
+        <!-- Hero Section Start -->
+        <section class="relative flex items-center justify-center h-[70vh] bg-cover bg-center overflow-hidden">
+            <div class="absolute inset-0 w-full h-[70vh] overflow-hidden z-0">
+                <video autoplay="" loop="" playsinline="" class="absolute min-w-full min-h-full object-cover">
+                    <source src="https://demo.awaikenthemes.com/assets/videos/artistic-seo-video.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video>
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
 
 
 
