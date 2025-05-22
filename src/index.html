@@ -30,7 +30,7 @@
             <!-- Mobile Menu End -->
 
             <!-- Mobile Menu Dropdown -->
-            <div id="mobile-menu" class="hidden absolute top-17 left-0 w-full bg-black/50 z-50 px-4 pt-5 pb-10 space-y-2 transition-all duration-300">
+            <div id="mobile-menu" class="hidden absolute top-17 left-0 w-full bg-black/96 z-50 px-4 pt-5 pb-10 space-y-2">
                 <div class="flex flex-col gap-4 text-lg font-medium">
                     <a href="#" class="text-white hover:text-[#c5ff00]">Home</a>
                     <a href="#" class="text-white hover:text-[#c5ff00]">About Us</a>
@@ -76,14 +76,42 @@
         <!-- Header Section End -->
 
         <!-- Hero Section Start -->
-        <section class="relative flex items-center justify-center h-[70vh] bg-cover bg-center overflow-hidden">
-            <div class="absolute inset-0 w-full h-[70vh] overflow-hidden z-0">
-                <video autoplay="" loop="" playsinline="" class="absolute min-w-full min-h-full object-cover">
-                    <source src="https://demo.awaikenthemes.com/assets/videos/artistic-seo-video.mp4" type="video/mp4">Your browser does not support the video tag.
+        <section class="relative flex flex-col justify-center h-[80vh] bg-cover bg-center overflow-hidden px-4">
+            <div class="absolute inset-0 w-full h-[80vh] overflow-hidden z-0">
+                <!-- 🎥 Video Background -->
+                <video autoplay="" loop="" playsinline="" muted class="absolute min-w-full min-h-full object-cover">
+                    <source src="./images/artistic-seo-video.mp4" type="video/mp4">Your browser does not support the video tag.
                 </video>
+                <!-- 🖤 Overlay -->
                 <div class="absolute inset-0 bg-black/60"></div>
             </div>
+            
+            <div class="z-10 text-white">
+                <h1 class="text-3xl font-bold leading-snug mb-4 capitalize">Elevate your business with our tailored</h1>
+            </div>
+            <div class="z-10 text-white">
+                <h2 id="scramble" class="text-2xl text-[#b4e600] font-bold leading-snug mb-4"></h2>
+            </div>
+            <div class="z-10 text-white">
+                <p>Elevate your brand's online presence with our expert SEO solutions. We help you attract the right audience, improve search rankings, and drive sustainable growth for your business.</p>
+            </div>
+
+            <!-- 🎉 CTA  -->
+            <div class="z-10 flex flex-col gap-4 mt-10">
+                <a href="#" class="text-white text-center px-4 py-2 rounded-full hover:text-white border border-[#c5ff00] hover:bg-[#b4e600]/10">Get Started
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 inline-block ml-2 bg-[#c5ff00] rounded-full text-black" fill="#000" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <a href="#" class="text-white text-center px-4 py-2 rounded-full hover:text-white border border-[#c5ff00] hover:bg-[#b4e600]/10">Explore Our Services
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 inline-block ml-2 bg-[#c5ff00] rounded-full text-black" fill="#000" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                
+            </div>
         </section>
+
         <!-- Hero Section End -->
 
 
