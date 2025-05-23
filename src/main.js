@@ -19,10 +19,8 @@
       "Digital Marketing",
       "SEO Solutions",
       "Brand Strategy",
-      "Content Creation",
-      "Social Media Management",
       "E-commerce Solutions",
-      "Mobile App Development",
+      "App Development",
     ];
 
     const chars = "!<>-_\\/[]{}—=+*^?#________";
