@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+/* Marquee style start */
+.marquee-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 30s linear infinite;
+      -webkit-animation: scroll-left 30s linear infinite;
+}
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    /* Marquee style end */
