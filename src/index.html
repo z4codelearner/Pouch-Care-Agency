@@ -644,7 +644,7 @@
             <!-- section container start -->
             <div class="container mx-auto px-4 relative z-10">
                 <!-- section header -->
-                <div class="flex items-center justify-between lg:flex-row flex-col gap-1">
+                <div class="flex items-center justify-between lg:flex-row flex-col gap-1 mb-8">
                     <div class="lg:w-1/2">
                         <h3 class="flex items-center gap-2 mb-2 text-sm font-semibold uppercase tracking-widest">
                             <img src="./images/icon-sub-heading.svg" alt="sub heading icon" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="w-3 h-3 inline-block" style="color:transparent">
@@ -663,7 +663,7 @@
                         <p class="text-gray-300 max-w-md">Our proven process combines research, strategy, and creativity to deliver tailored solutions that drive measurable results for businesses of all sizes.</p>
 
                         <a href="#" class="group flex items-center gap-1 relative z-10 mt-6 w-[180px]">
-                            <button class="bg-zinc-800/70 text-white px-6 py-3 rounded-full flex items-center gap-2 group-hover:bg-zinc-700/50 transition-colors capitalize cursor-pointer">All Services</button>
+                            <button class="bg-zinc-800/70 text-white px-6 py-3 rounded-full flex items-center gap-2 group-hover:bg-zinc-700/50 transition-colors capitalize cursor-pointer">Learn More</button>
                             
                             <div class="bg-[#b4e600] group-hover:bg-white w-10 h-10 rounded-full flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-black -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
@@ -675,104 +675,256 @@
                 <!-- section header end -->
 
                 <!-- section content Start -->
-                <div class="grid grid-cols-1 gap-8 mt-10 md:grid-cols-3">
-                    <div class="p-5 bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-3xl flex flex-col gap-4 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 border border-white/10">
-                        <div class="flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-[#b4e600]" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                            <h3 class="text-lg font-semibold">SEO Optimization</h3>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                    <div class="p-4 sm:p-6 col-span-1 md:col-span-2 bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-3xl flex flex-col gap-4 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 border border-white/10 group">
+                        <div class="overflow-hidden rounded-2xl group h-48 sm:h-56 md:h-64 relative">
+                            <img alt="Custom Branding Solutions" loading="lazy" width="800" height="600" decoding="async" data-nimg="1" class="transition-transform duration-500 group-hover:scale-110 w-full h-full object-cover" style="color:transparent" src="./images/digital-features-img-1.jpg">
 
-                        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatibus.</p>
-
-                        <a href="#" class="group flex items-center gap-1 relative z-10 mt-6 w-[180px]">
-                            <button class="bg-[#b4e600] text-black px-3 py-1 rounded-full flex items-center gap-2 group-hover:bg-white transition-colors capitalize cursor-pointer">Get Started</button>
-                            
-                            <div class="bg-zinc-800/70 group-hover:bg-zinc-700/50 w-8 h-8 rounded-full flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-white -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                                </svg>
+                            <div class="absolute top-4 left-4 bg-[#c5ff00] rounded-full p-2  group-hover:bg-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette text-black w-5 h-5" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
                             </div>
-                        </a>
+                        </div>
+                        <div class="mt-4 flex flex-col gap-2 items-start">
+                            <h3 class="text-lg sm:text-xl font-bold">Custom Branding Solutions</h3>
+
+                            <p class="text-gray-300 text-sm sm:text-base">Unique brand identity development, including logos, color palettes, typography, and brand guidelines that capture your company's essence and resonate with your target audience.</p>
+
+                            <a href="#" class="inline-flex items-center gap-2 text-[#c5ff00] mt-2 group/link">
+                                <span>Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 transition-transform group-hover/link:translate-x-1" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="p-5 bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-3xl flex flex-col gap-4 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 border border-white/10">
-                        <div class="flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-[#b4e600]" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
-                            <h3 class="text-lg font-semibold">Digital Marketing</h3>
-                        </div>
+                    <div class="p-4 sm:p-6 col-span-1 bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-3xl flex flex-col gap-4 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 border border-white/10 group">
+                        <div class="overflow-hidden rounded-2xl group h-48 sm:h-56 md:h-64 relative">
+                            <img alt="Custom Branding Solutions" loading="lazy" width="800" height="600" decoding="async" data-nimg="1" class="transition-transform duration-500 group-hover:scale-110 w-full h-full object-cover" style="color:transparent" src="./images/digital-features-img-2.jpg">
 
-                        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatibus.</p>
-
-                        <a href="#" class="group flex items-center gap-1 relative z-10 mt-6 w-[180px]">
-                            <button class="bg-[#b4e600] text-black px-3 py-1 rounded-full flex items-center gap-2 group-hover:bg-white transition-colors capitalize cursor-pointer">Get Started</button>
-                            
-                            <div class="bg-zinc-800/70 group-hover:bg-zinc-700/50 w-8 h-8 rounded-full flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-white -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                                </svg>
+                            <div class="absolute top-4 left-4 bg-[#c5ff00] rounded-full p-2  group-hover:bg-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette text-black w-5 h-5" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
                             </div>
-                        </a>
+                        </div>
+                        <div class="mt-4 flex flex-col gap-2 items-start">
+                            <h3 class="text-lg sm:text-xl font-bold">Custom Branding Solutions</h3>
+
+                            <p class="text-gray-300 text-sm sm:text-base">Unique brand identity development, including logos, color palettes, typography, and brand guidelines that capture your company's essence and resonate with your target audience.</p>
+
+                            <a href="#" class="inline-flex items-center gap-2 text-[#c5ff00] mt-2 group/link">
+                                <span>Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 transition-transform group-hover/link:translate-x-1" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="p-5 bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-3xl flex flex-col gap-4 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 border border-white/10">
-                        <div class="flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-[#b4e600]" aria-hidden="true"><path d="M6 3h12l4 6-10 13L2 9Z"></path><path d="M11 3 8 9l4 13 4-13-3-6"></path><path d="M2 9h20"></path></svg>
-                            <h3 class="text-lg font-semibold">Branding & Identity</h3>
-                        </div>
+                    <div class="p-4 sm:p-6 col-span-1 bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-3xl flex flex-col gap-4 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 border border-white/10 group">
+                        <div class="overflow-hidden rounded-2xl group h-48 sm:h-56 md:h-64 relative">
+                            <img alt="Custom Branding Solutions" loading="lazy" width="800" height="600" decoding="async" data-nimg="1" class="transition-transform duration-500 group-hover:scale-110 w-full h-full object-cover" style="color:transparent" src="./images/service-process-step-1.jpg">
 
-                        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatibus.</p>
-
-                        <a href="#" class="group flex items-center gap-1 relative z-10 mt-6 w-[180px]">
-                            <button class="bg-[#b4e600] text-black px-3 py-1 rounded-full flex items-center gap-2 group-hover:bg-white transition-colors capitalize cursor-pointer">Get Started</button>
-                            
-                            <div class="bg-zinc-800/70 group-hover:bg-zinc-700/50 w-8 h-8 rounded-full flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-white -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                                </svg>
+                            <div class="absolute top-4 left-4 bg-[#c5ff00] rounded-full p-2  group-hover:bg-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette text-black w-5 h-5" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
                             </div>
-                        </a>
+                        </div>
+                        <div class="mt-4 flex flex-col gap-2 items-start">
+                            <h3 class="text-lg sm:text-xl font-bold">Custom Branding Solutions</h3>
+
+                            <p class="text-gray-300 text-sm sm:text-base">Unique brand identity development, including logos, color palettes, typography, and brand guidelines that capture your company's essence and resonate with your target audience.</p>
+
+                            <a href="#" class="inline-flex items-center gap-2 text-[#c5ff00] mt-2 group/link">
+                                <span>Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 transition-transform group-hover/link:translate-x-1" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                    <div class="p-4 sm:p-6 col-span-1 md:col-span-2 bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-3xl flex flex-col gap-4 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 border border-white/10 group">
+                        <div class="overflow-hidden rounded-2xl group h-48 sm:h-56 md:h-64 relative">
+                            <img alt="Custom Branding Solutions" loading="lazy" width="800" height="600" decoding="async" data-nimg="1" class="transition-transform duration-500 group-hover:scale-110 w-full h-full object-cover" style="color:transparent" src="./images/faq-img-2.jpg">
 
-                <!-- Get a free quote -->
-                <div class="mt-10 flex flex-col items-center justify-center gap-5">
-                    <p class="text-gray-300 text-center">Let's make something great work together.</p>
-                    <a href="#" class="bg-[#b4e600] text-black px-6 py-3 rounded-full hover:bg-white transition-colors capitalize cursor-pointer font-semibold">Get a Free Quote</a>
-                </div>
-                <!-- section content End -->
-                <div class="p-2 mt-16 rounded-2xl max-w-5xl mx-auto" style="background:linear-gradient(90deg, #b4e600 0%, #b4e600 100%)">
-                    <div class="bg-black rounded-2xl p-10 flex flex-col md:flex-row gap-10 items-center">
-                        <div class="flex-1">
-                            <div class="">
-                                <h3 class="text-3xl font-bold mb-6 capitalize">
-                                    Expertise that drives <br>
-                                    digital <span class="text-[#b4e600]">success</span>
-                                </h3>
-                            </div>
-                            <div class="flex gap-8 mb-4">
-                                <div>
-                                    <span class="text-3xl font-bold text-[#b4e600]">+60%</span>
-                                    <p class="text-gray-300 text-sm mt-1">By optimizing your website for search engines.</p>
-                                </div>
-                                <div>
-                                    <span class="text-3xl font-bold text-[#b4e600]">+30%</span>
-                                    <p class="text-gray-300 text-sm mt-1">Rise in revenue as more visitors convert into paying customers.</p>
-                                </div>
+                            <div class="absolute top-4 left-4 bg-[#c5ff00] rounded-full p-2  group-hover:bg-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette text-black w-5 h-5" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
                             </div>
                         </div>
-                        <div class="flex-1 grid grid-cols-1 gap-6">
-                            <div class="flex items-start gap-3">
-                                <img alt="staricon" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="w-4 h-4 mt-2" style="color:transparent" src="./images/icon-sub-heading.svg">
-                                <p class="text-gray-300 text-sm"> <b class="text-lg text-white">Social Media Management:</b> Our social media management services focus on building and enhancing your brand's online presence. We create engaging content, manage your social media accounts, and analyze performance.</p>
-                            </div>
-                            <div class="flex items-star gap-3">
-                                <img alt="staricon" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="w-4 h-4 mt-2" style="color:transparent" src="./images/icon-sub-heading.svg">
-                                <p class="text-gray-300 text-sm"> <b class="text-lg text-white">E-commerce Solutions:</b> Our e-commerce solutions are designed to create seamless online shopping experiences. From user-friendly website design to secure payment processing and inventory management.</p>
-                            </div>
+                        <div class="mt-4 flex flex-col gap-2 items-start">
+                            <h3 class="text-lg sm:text-xl font-bold">Custom Branding Solutions</h3>
+
+                            <p class="text-gray-300 text-sm sm:text-base">Unique brand identity development, including logos, color palettes, typography, and brand guidelines that capture your company's essence and resonate with your target audience.</p>
+
+                            <a href="#" class="inline-flex items-center gap-2 text-[#c5ff00] mt-2 group/link">
+                                <span>Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 transition-transform group-hover/link:translate-x-1" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
+                <div class="mt-12 sm:mt-16 text-center">
+                    <div class="p-4 sm:p-6 col-span-1 md:col-span-2 bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-3xl flex flex-col gap-2 shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 border border-white/10 group">
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-4 capitalize">Ready to transform your digital presence?</h3>
+                        <p class="text-gray-300 max-w-2xl mx-auto mb-6">Our team of experts is ready to help you achieve your business goals with our comprehensive suite of digital marketing services.</p>
+                        <div class="flex items-center justify-center">
+                            <a href="#" class="group flex items-center gap-1 relative z-10 w-[220px]">
+                            <button class="bg-zinc-800/70 text-white px-6 py-3 rounded-full flex items-center gap-2 group-hover:bg-zinc-700/50 transition-colors capitalize cursor-pointer">Get Started Today</button>
+                            
+                            <div class="bg-[#b4e600] group-hover:bg-white w-10 h-10 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-black -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- section background color round shape   -->
                 <div class="absolute left-0 bottom-0 w-80 h-80 bg-gradient-to-br from-[#bff747]/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
             </div>
             <!-- section container End -->
         </section>
         <!-- Features End -->
+
+        <!-- key Benifits Start -->
+        <section class="bg-black text-white py-24 relative overflow-hidden">
+            <!-- Overlay -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+            <!-- section container start -->
+            <div class="container mx-auto px-4 relative z-10">
+                <!-- section header -->
+                <div class="flex items-center justify-between lg:flex-row flex-col gap-1">
+                    <div class="lg:w-1/2">
+                        <h3 class="flex items-center gap-2 mb-2 text-sm font-semibold uppercase tracking-widest">
+                            <img src="./images/icon-sub-heading.svg" alt="sub heading icon" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="w-3 h-3 inline-block" style="color:transparent">
+                            KEY BENEFITS
+                        </h3>
+                        <h2 class="text-4xl font-bold mb-6 capitalize">
+                            Our proven  
+                            <span class="text-[#b4e600]">process</span> 
+                            for <br>achieving success
+                        </h2>
+                    </div>
+
+                    <div class="lg:w-1/2 flex flex-col gap-2 md:items-end">
+                        <p class="text-gray-300 max-w-md">Our proven process combines research, strategy, and creativity to deliver tailored solutions that drive measurable results.</p>
+
+                        <!-- <a href="#" class="group flex items-center gap-1 relative z-10 mt-6 w-[180px]">
+                            <button class="bg-zinc-800/70 text-white px-6 py-3 rounded-full flex items-center gap-2 group-hover:bg-zinc-700/50 transition-colors capitalize cursor-pointer">All Services</button>
+                            
+                            <div class="bg-[#b4e600] group-hover:bg-white w-10 h-10 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-black -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+                <!-- section header end -->
+
+                <!-- section content Start -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                    <div class="bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-2xl p-6 flex flex-col items-start gap-4 transition-colors duration-300 shadow-lg hover:shadow-xl cursor-pointer border border-white/10">
+                        <div class="text-lime-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-list" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Personalized Approach</h3>
+                        <p class="text-gray-400 text-sm">We customize strategies to fit your brand's specific needs, ensuring alignment.</p>
+                    </div>
+                    <div class="bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-2xl p-6 flex flex-col items-start gap-4 transition-colors duration-300 shadow-lg hover:shadow-xl cursor-pointer border border-white/10">
+                        <div class="text-lime-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Experienced Team</h3>
+                        <p class="text-gray-400 text-sm">Combines industry knowledge and creativity to exceptional results for your brand.</p>
+                    </div>
+                    <div class="bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-2xl p-6 flex flex-col items-start gap-4 transition-colors duration-300 shadow-lg hover:shadow-xl cursor-pointer border border-white/10">
+                        <div class="text-lime-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="m9 14 2 2 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Data–Driven Decisions</h3>
+                        <p class="text-gray-400 text-sm">We utilize data insights to refine strategies, optimize and ensure impactful, measurable results.</p>
+                    </div>
+                    <div class="bg-zinc-900/30 hover:bg-[#b4e600]/10 rounded-2xl p-6 flex flex-col items-start gap-4 transition-colors duration-300 shadow-lg hover:shadow-xl cursor-pointer border border-white/10">
+                        <div class="text-lime-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Ongoing Support</h3>
+                        <p class="text-gray-400 text-sm">We provide continuous support and maintenance on digital assets and strategies.</p>
+                    </div>
+                </div>
+                <!-- section content End -->
+            </div>
+            <!-- section container End -->
+        </section>
+        <!-- key Benifits End -->
+
+        <!-- testimonial Start -->
+        <section class="bg-black text-white py-24 relative overflow-hidden">
+            <!-- Overlay -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+            <!-- section container start -->
+            <div class="container mx-auto px-4 relative z-10">
+                <!-- section header -->
+                <div class="flex items-center justify-between lg:flex-row flex-col gap-1 mb-8">
+                    <div class="lg:w-1/2">
+                        <h3 class="flex items-center gap-2 mb-2 text-sm font-semibold uppercase tracking-widest">
+                            <img src="./images/icon-sub-heading.svg" alt="sub heading icon" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="w-3 h-3 inline-block" style="color:transparent">
+                            TESTIMONIALS
+                        </h3>
+                        <h2 class="text-4xl font-bold mb-6 capitalize">
+                            Our 
+                            <span class="text-[#b4e600]">digital services</span> 
+                            to grow
+                            <br class="hidden md:block">
+                            your brand 
+                        </h2>
+                    </div>
+
+                    <div class="lg:w-1/2 flex flex-col gap-2 md:items-end">
+                        <p class="text-gray-300 max-w-md">Our proven process combines research, strategy, and creativity to deliver tailored solutions that drive measurable results for businesses of all sizes.</p>
+
+                        <a href="#" class="group flex items-center gap-1 relative z-10 mt-6 w-[180px]">
+                            <button class="bg-zinc-800/70 text-white px-6 py-3 rounded-full flex items-center gap-2 group-hover:bg-zinc-700/50 transition-colors capitalize cursor-pointer">Learn More</button>
+                            
+                            <div class="bg-[#b4e600] group-hover:bg-white w-10 h-10 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-black -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- section header end -->
+
+                <!-- section content Start -->
+                <div class="flex flex-col md:flex-row gap-8 mb-12">
+                    <div class="flex-1 bg-zinc-900/60 rounded-2xl p-8 flex flex-col items-center justify-center border border-white/10 min-w-[300px] max-w-[350px] mx-auto md:mx-0">
+                        <div class="text-6xl font-bold mb-2">4.9</div>
+                        <div class="flex items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-[#bff747] fill-[#bff747]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-[#bff747] fill-[#bff747]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-[#bff747] fill-[#bff747]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-[#bff747] fill-[#bff747]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-[#bff747] fill-[#bff747]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-gray-300 mb-4">(40+ Reviews)</div>
+                        <div class="font-semibold text-center mb-4">Customer experiences that<br>speak for themselves</div>
+                        <div class="flex -space-x-2">
+                            <img alt="user1" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="w-8 h-8 rounded-full border-2 border-black" style="color:transparent" src="./images/satisfy-client-img-3.jpg">
+                            <img alt="user1" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="w-8 h-8 rounded-full border-2 border-black" style="color:transparent" src="./images/satisfy-client-img-1.jpg">
+                            <img alt="user1" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="w-8 h-8 rounded-full border-2 border-black" style="color:transparent" src="./images/satisfy-client-img-4.jpg">
+                            <img alt="user1" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="w-8 h-8 rounded-full border-2 border-black" style="color:transparent" src="./images/satisfy-client-img-2.jpg">
+                        </div>
+                    </div>
+                    <div class="flex-1 bg-zinc-900/60 rounded-2xl p-8 border border-white/10 flex flex-col justify-between relative overflow-hidden"></div>
+                </div>
+
+                <!-- section background color round shape   -->
+                <div class="absolute left-0 bottom-0 w-80 h-80 bg-gradient-to-br from-[#bff747]/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+            </div>
+            <!-- section container End -->
+        </section>
+        <!-- testimonial End -->
 
 
 
