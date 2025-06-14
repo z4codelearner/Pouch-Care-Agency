@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+/* Hero Button Spinner */
+.animate-spin-slow {
+    animation: spin 10s linear infinite;
+    }
+
+    @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+    }
+  }
+
 /* Marquee style start */
 .marquee-track {
       display: flex;
@@ -11,25 +33,49 @@
     @keyframes scroll-left {
       0% {
         transform: translateX(0%);
-      }
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+}
       100% {
         transform: translateX(-50%);
-      }
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
     }
     /* Marquee style end */
 
 
 
-    .animate-spin-slow {
-      animation: spin 10s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
   
+/* Testimonial Marquee */
+.z4-marquee{
+  animation: scroll 80.64s linear 0s infinite;
+  -webkit-animation: scroll 80.64s linear 0s infinite running;
+}
+
+.z4-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+  100% {
+    transform: translateX(-30%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-30%);
+    -ms-transform: translateX(-30%);
+    -o-transform: translateX(-30%);
+    -webkit-transform: translateX(-30%);
+}
+}
+

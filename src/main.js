@@ -1,7 +1,6 @@
 // This code handles the click event for a mobile menu toggle button.
 // When the button is clicked, it toggles the visibility of the mobile menu by adding or removing the 'hidden' class.
 
-
     const toggleBtn = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const openIcon = document.getElementById('menu-open-icon');
@@ -85,3 +84,4 @@
 
     nextPhrase();
     setInterval(nextPhrase, 5000); // Every 5 seconds, next phrase
+
