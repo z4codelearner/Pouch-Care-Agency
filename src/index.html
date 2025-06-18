@@ -97,7 +97,7 @@
         <!-- Header Section End -->
 
         <!-- Hero Section Start -->
-        <section class="bg-black text-white h-[80vh] py-24 relative overflow-hidden">
+        <section class="bg-black text-white h-[80vh] flex items-center relative overflow-hidden">
             <div class="absolute inset-0 w-full h-[80vh] overflow-hidden z-0">
                 <!-- 🎥 Video Background -->
                 <video autoplay="" loop="" playsinline="" muted class="absolute min-w-full min-h-full object-cover">
@@ -106,16 +106,17 @@
                 <!-- 🖤 Overlay -->
                 <div class="absolute inset-0 bg-black/60"></div>
             </div>
-            <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center">
+            <!-- Hero Content -->
+            <div class="container mx-auto px-4 h-[80vh] relative z-10 flex flex-col justify-center space-y-8">
                 <div class="max-w-4xl">
                     <div class="z-10 text-white">
-                        <h1 class="text-3xl font-bold leading-snug mb-4 capitalize md:">Elevate your business with our tailored</h1>
+                        <h1 class="text-4xl font-bold leading-snug mb-4 capitalize sm:text-5xl xl:text-8xl xl:leading-[1.02em]">Elevate your business with our tailored</h1>
                     </div>
                     <div class="text-white">
-                        <h2 id="scramble" class="text-2xl text-[#b4e600] font-bold leading-snug mb-4"></h2>
+                        <h2 id="scramble" class="text-2xl text-[#b4e600] font-bold leading-snug mb-4 xl:text-4xl"></h2>
                     </div>
-                    <div class="max-w-2xl text-white">
-                        <p>Elevate your brand's online presence with our expert SEO solutions. We help you attract the right audience, improve search rankings, and drive sustainable growth for your business.</p>
+                    <div class="max-w-2xl">
+                        <p class="text-gray-300 mb-6 xl:text-lg">Elevate your brand's online presence with our expert SEO solutions. We help you attract the right audience, improve search rankings, and drive sustainable growth for your business.</p>
                     </div>
 
                     <!-- 🎉 CTA  -->
@@ -131,17 +132,14 @@
                     </div>
                 </div>
                 <!-- spinning Circular Text -->
-                <div class="absolute w-40 h-40 flex items-center justify-center group
-                
-         bottom-10 right-4 sm:bottom-16 sm:right-12 md:bottom-24 md:right-24
-                ">
-                    <div class="animate-spin-slow md:visible flex md:relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32">
+                <div class="absolute w-30 h-30 flex items-center justify-center group bottom-[1%] right-[5%] sm:bottom-16 sm:right-12 md:bottom-24 md:right-24 lg:bottom-32 lg:right-32 xl:bottom-[10%] xl:right-[5%] gap-8">
+                    <div class="animate-spin-slow flex items-center justify-center w-full h-full">
                         <svg viewBox="0 0 100 100" class="w-full h-full">
                             <defs>
                                 <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
                             </defs>
                             
-                            <text font-size="7" fill="currentcolor" class="text-white group-hover:text-[#b4e600] font-semibold">
+                            <text font-size="7" fill="currentcolor" class="text-white text-md group-hover:text-[#b4e600] font-semibold">
                                 <textPath href="#circlePath" textLength="218" sartOffset="0" lengthAdjust="spacingAndGlyphs">
                                     Since 2024 • Digital Marketing • SEO Experts • Web Design Solutions •
                                 </textPath>
@@ -149,8 +147,8 @@
                         </svg>
                     </div>
                     <!-- Center Icon -->
-                     <div class="absolute inset-0 flex items-center justify-center">
-                        <button onclick="window.open('./contact-us.html', '_blank');" type="button" class="absolute z-10 bg-[#b4e600] group-hover:bg-white w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full text-black text-2xl transition-colors">
+                    <div class="absolute inset-0 flex items-center justify-center ">
+                        <button onclick="window.open('./contact-us.html', '_blank');" type="button" class="absolute z-10 bg-[#b4e600] group-hover:bg-white w-10 h-10 flex items-center justify-center rounded-full text-black text-2xl transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -160,14 +158,9 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </button>
-                     </div>
-                    
+                    </div>
                 </div>
             </div>
-            
-            
-
-
         </section>
         <!-- Hero Section End -->
 
@@ -1384,10 +1377,10 @@
                 <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
 
-            <div class="relative z-20 flex flex-col items-center w-full">
+            <div class="relative z-20 py-10 flex flex-col items-center w-full">
                 <div class="uppercase text-white text-sm font-semibold tracking-widest mb-2 text-center">LET'S COLLABORATE</div>
                 <div class="relative flex flex-col items-center">
-                    <h2 class="text-white text-7xl md:text-[7rem] font-extrabold leading-24 text-center">LET'S WORK<br>TOGETHER</h2>
+                    <h2 class="text-white text-5xl font-extrabold leading-[3.2] text-center md:text-[7rem] xl:leading-32">LET'S WORK<br>TOGETHER</h2>
 
                     <a class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30" href="/contact-us">
                         <div class="flex flex-col items-center justify-center w-28 h-28 rounded-full bg-[#b4e600] text-black font-bold text-lg shadow-lg  hover:bg-zinc-700 group duration-300 transition-all">
@@ -1506,11 +1499,6 @@
             </div>
         </footer>
         <!-- Footer section End -->
-
-
-
-
-
 
 
 
