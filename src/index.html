@@ -74,7 +74,7 @@
 
 
             <!-- Desktop Menu -->
-            <div class="hidden md:flex justify-between items-center">
+            <div class="hidden container mx-auto md:flex justify-between items-center">
                 <div class="">
                     <a href="./index.html">
                         <p class="text-white text-2xl font-semibold">Pouch Care<span class="text-[#c5ff00] text-3xl">.</span></p>
@@ -97,8 +97,8 @@
         <!-- Header Section End -->
 
         <!-- Hero Section Start -->
-        <section class="relative flex flex-col justify-center h-[60vh] px-4 bg-cover bg-center overflow-hidden">
-            <div class="absolute inset-0 w-full h-[60vh] overflow-hidden z-0">
+        <section class="bg-black text-white h-[80vh] py-24 relative overflow-hidden">
+            <div class="absolute inset-0 w-full h-[80vh] overflow-hidden z-0">
                 <!-- 🎥 Video Background -->
                 <video autoplay="" loop="" playsinline="" muted class="absolute min-w-full min-h-full object-cover">
                     <source src="./images/artistic-seo-video.mp4" type="video/mp4">Your browser does not support the video tag.
@@ -106,51 +106,67 @@
                 <!-- 🖤 Overlay -->
                 <div class="absolute inset-0 bg-black/60"></div>
             </div>
+            <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center">
+                <div class="max-w-4xl">
+                    <div class="z-10 text-white">
+                        <h1 class="text-3xl font-bold leading-snug mb-4 capitalize md:">Elevate your business with our tailored</h1>
+                    </div>
+                    <div class="text-white">
+                        <h2 id="scramble" class="text-2xl text-[#b4e600] font-bold leading-snug mb-4"></h2>
+                    </div>
+                    <div class="max-w-2xl text-white">
+                        <p>Elevate your brand's online presence with our expert SEO solutions. We help you attract the right audience, improve search rankings, and drive sustainable growth for your business.</p>
+                    </div>
+
+                    <!-- 🎉 CTA  -->
+                    <div class="flex flex-col gap-4 mt-10 sm:flex-row">
+                        <a href="#" class="group text-white text-center px-4 py-2 rounded-full hover:text-white border border-[#c5ff00] hover:bg-[#b4e600]/10 transition-all duration-300">Get Started
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 inline-block ml-2 bg-[#c5ff00] group-hover:bg-white rounded-full text-black" fill="#000" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                        </a>
+                        <a href="#" class="group text-white text-center px-4 py-2 rounded-full hover:text-white border border-[#c5ff00] hover:bg-[#b4e600]/10 transition-all duration-300">Explore Our Services
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 inline-block ml-2 bg-[#c5ff00] group-hover:bg-white rounded-full text-black" fill="#000" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- spinning Circular Text -->
+                <div class="absolute w-40 h-40 flex items-center justify-center group
+                
+         bottom-10 right-4 sm:bottom-16 sm:right-12 md:bottom-24 md:right-24
+                ">
+                    <div class="animate-spin-slow md:visible flex md:relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32">
+                        <svg viewBox="0 0 100 100" class="w-full h-full">
+                            <defs>
+                                <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+                            </defs>
+                            
+                            <text font-size="7" fill="currentcolor" class="text-white group-hover:text-[#b4e600] font-semibold">
+                                <textPath href="#circlePath" textLength="218" sartOffset="0" lengthAdjust="spacingAndGlyphs">
+                                    Since 2024 • Digital Marketing • SEO Experts • Web Design Solutions •
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                    <!-- Center Icon -->
+                     <div class="absolute inset-0 flex items-center justify-center">
+                        <button onclick="window.open('./contact-us.html', '_blank');" type="button" class="absolute z-10 bg-[#b4e600] group-hover:bg-white w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full text-black text-2xl transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-arrow-right text-black -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </button>
+                     </div>
+                    
+                </div>
+            </div>
             
-            <div class="z-10 text-white">
-                <h1 class="text-3xl font-bold leading-snug mb-4 capitalize">Elevate your business with our tailored</h1>
-            </div>
-            <div class="z-10 text-white">
-                <h2 id="scramble" class="text-2xl text-[#b4e600] font-bold leading-snug mb-4"></h2>
-            </div>
-            <div class="z-10 text-white">
-                <p>Elevate your brand's online presence with our expert SEO solutions. We help you attract the right audience, improve search rankings, and drive sustainable growth for your business.</p>
-            </div>
+            
 
-            <!-- 🎉 CTA  -->
-            <div class="z-10 flex flex-col gap-4 mt-10">
-                <a href="#" class="text-white text-center px-4 py-2 rounded-full hover:text-white border border-[#c5ff00] hover:bg-[#b4e600]/10">Get Started
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 inline-block ml-2 bg-[#c5ff00] rounded-full text-black" fill="#000" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                </a>
-                <a href="#" class="text-white text-center px-4 py-2 rounded-full hover:text-white border border-[#c5ff00] hover:bg-[#b4e600]/10">Explore Our Services
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 inline-block ml-2 bg-[#c5ff00] rounded-full text-black" fill="#000" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Rotating Circular Text -->
-            <div class="relative w-40 h-40 flex items-center justify-center">
-                <div class="absolute w-full h-full animate-spin-slow">
-                    <svg viewBox="0 0 100 100" class="w-full h-full">
-                    <defs>
-                        <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
-                    </defs>
-                    <text font-size="6" fill="white">
-                        <textPath href="#circlePath" textLength="220">
-                        Since 2024 • Digital Marketing • SEO Experts • Web Design Solutions •
-                        </textPath>
-                    </text>
-                    </svg>
-                </div>
-
-                <!-- Center Icon -->
-                <div class="z-10 bg-[#b4e600] group hover:bg-white w-12 h-12 flex items-center justify-center rounded-full text-black text-2xl">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-black -rotate-45 group-hover:rotate-0 transition-all duration-300 cursor-pointer" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                </div>
-            </div>
 
         </section>
         <!-- Hero Section End -->
@@ -1390,7 +1406,8 @@
         <footer class="relative overflow-hidden bg-black/90 backdrop-blur-lg border-t border-white/10">
             <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-0">
                 <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[120vw] h-[60vw] bg-gradient-to-tr from-[#bff747]/30 via-[#1a1a1a]/60 to-[#bff747]/10 rounded-full blur-3xl opacity-80"></div>
-                <svg class="absolute bottom-0 right-0 w-1/2 h-1/2 opacity-30" viewBox="0 0 400 400" fill="none"><circle cx="200" cy="200" r="200" fill="#bff747" fill-opacity="0.08"></circle></svg>
+
+                <div class=" right-0 opacity-30 absolute left-0 bottom-0 w-80 h-80 bg-gradient-to-br from-[#bff747]/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
             </div>
             <div class="relative z-10 container mx-auto px-4 py-8 md:py-12">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -1399,17 +1416,18 @@
                             <span class="text-[#bff747] text-2xl font-bold drop-shadow-lg">PourchCare.</span>
                         </div>
                         <p class="text-gray-400 text-sm mb-4">Elevating your digital presence with innovative solutions and expert strategies.</p>
-                        <div class="flex items-center gap-3 text-[#bff747] ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5 text-[#bff747] " aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                             <a href="tel:3098855314" class="text-white font-medium text-base hover:text-[#bff747] transition-all duration-300">(309) 8855–314</a>
                         </div>
-                        <div class="flex items-center gap-3 text-[#bff747]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5 text-[#bff747] " aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                             <div class="flex flex-col">
-                                <a href="mailto:Info@pouchcare.com" class="text-white font-medium text-base group hover:text-[#bff747] transition-all duration-300 "> Info@pouchcare.com</a>
+                                <a href="mailto:Info@pouchcare.com" class="text-[#bff747] font-medium text-base group hover:text-white transition-all duration-300 ">info@pouchcare.com</a>
                             </div>
                         </div>
                     </div>
+
                     <div>
                         <h3 class="text-white text-lg font-semibold mb-4">About Our Agency</h3>
                         <p class="text-gray-400 text-sm mb-3">PouchCare is a leading digital agency specializing in web development, app solutions, and digital marketing. We empower businesses to grow online with innovative strategies and cutting-edge technology.</p>
@@ -1425,10 +1443,11 @@
                             </li>
                         </ul>
                     </div>
+
                     <div>
                         <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
                         <ul class="space-y-2">
-                            <li>
+                            <li class="w-32">
                                 <a class="text-gray-400 hover:text-[#bff747] transition-colors flex items-center gap-2" href="/home">
                                     <span class="w-1.5 h-1.5 bg-[#bff747] rounded-full"></span>
                                     Home
@@ -1453,27 +1472,30 @@
                             </li>
                         </ul>
                     </div>
+
                     <div>
                         <h3 class="text-white text-lg font-semibold mb-4">Subscribe Our Newsletter</h3>
                         <p class="text-gray-400 text-sm mb-4">Stay updated with our latest news and special offers.</p>
                         <form class="flex flex-col sm:flex-row gap-2 mb-4">
                             <input type="email" placeholder="Enter your email" class="rounded-md px-4 py-2 bg-transparent border border-white/20 text-white focus:outline-none focus:border-[#bff747] w-full">
-                            <button type="submit" class="rounded-md px-5 py-2 bg-[#bff747] text-black font-semibold hover:bg-[#d4ff6b] transition-colors whitespace-nowrap shadow">Subscribe</button>
+                            <button type="submit" class="rounded-md px-5 py-2 border border-[#c5ff00] bg-[#bff747] text-black hover:text-white font-semibold hover:bg-[#d4ff6b]/10 transition-colors whitespace-nowrap shadow">Subscribe</button>
                         </form>
                         <div class="flex gap-4 mt-4">
-                            <a target="_blank" class="w-8 h-8 rounded-full border border-[#bff747] flex items-center justify-center hover:bg-[#bff747] hover:text-black transition-colors shadow" href="https://x.com/Pouchcareofficial">
+                            <a target="_blank" class="w-8 h-8 rounded-full border border-[#bff747] flex items-center justify-center hover:bg-[#bff747] text-white hover:text-black transition-colors shadow" href="https://x.com/Pouchcareofficial">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-4 h-4" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
                             </a>
-                            <a target="_blank" class="w-8 h-8 rounded-full border border-[#bff747] flex items-center justify-center hover:bg-[#bff747] hover:text-black transition-colors shadow" href="https://www.facebook.com/pouchcaredm">
+                            <a target="_blank" class="w-8 h-8 rounded-full border border-[#bff747] flex items-center justify-center hover:bg-[#bff747] text-white hover:text-black transition-colors shadow" href="https://www.facebook.com/pouchcaredm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-4 h-4" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                             </a>
-                            <a target="_blank" class="w-8 h-8 rounded-full border border-[#bff747] flex items-center justify-center hover:bg-[#bff747] hover:text-black transition-colors shadow" href="https://pouchcare.com">
+                            <a target="_blank" class="w-8 h-8 rounded-full border border-[#bff747] flex items-center justify-center hover:bg-[#bff747] text-white hover:text-black transition-colors shadow" href="https://pouchcare.com">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
                             </a>
                         </div>
                     </div>
                 </div>
+
                 <hr class="my-6 md:my-8 border-white/10">
+
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
                     <p class="text-gray-400 text-sm">Copyright © <!-- -->2025<!-- --> Pouch Care. All rights reserved.</p>
                     <div class="flex gap-4">
@@ -1508,3 +1530,5 @@
 
     </body>
 </html>
+
+
