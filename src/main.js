@@ -85,3 +85,14 @@
     nextPhrase();
     setInterval(nextPhrase, 5000); // Every 5 seconds, next phrase
 
+
+    // This code handles the opening and closing of a modal dialog.
+    // It adds event listeners to buttons to show and hide the modal by toggling a 'hidden' class on the modal element.
+    // The modal is initially hidden and becomes visible when the open button is clicked, and hidden when the close button is clicked.
+    const openBtn = document.getElementById('openModalBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('modal');
+
+    openBtn.addEventListener('click', () => modal.classList.remove('hidden'));
+    closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+

@@ -61,8 +61,9 @@
                     <li><a href="#" class="text-white hover:text-[#b4e600]">Contact Us</a></li>
                 </ul>
                 <div class="flex gap-4 mt-10 md:hidden">
-                    <a href="#" class="text-white px-3 py-1 rounded hover:text-[#b4e600] border border-[#b4e600]">Login</a>
-                    <a href="#" class="bg-[#b4e600] text-black px-3 py-1 rounded hover:bg-[#b4e600]">Sign Up</a>
+                    <!-- <a href="#" class="text-white px-3 py-1 rounded hover:text-[#b4e600] border border-[#b4e600]">Login</a>
+                    <a href="#" class="bg-[#b4e600] text-black px-3 py-1 rounded hover:bg-[#b4e600]">Sign Up</a> -->
+                    
                 </div>
                 <!-- Social links -->
                 <div class="flex gap-4 mt-10 text-center text-xl">
@@ -75,7 +76,6 @@
             </div>
             <!-- Mobile Menu Dropdown End -->
             <!-- Mobile Menu End -->
-
 
             <!-- Desktop Menu -->
             <div class="hidden container mx-auto lg:flex justify-between items-center">
@@ -114,17 +114,22 @@
                 <div class="flex gap-4">
                     <!-- <a href="./login.html" class="text-white font-medium px-3 py-1 rounded hover:bg-[#b4e600]/10 border border-[#b4e600] transition-all duration-300">Login</a>
                     <a href="./signup.html" class="bg-[#b4e600] text-black font-medium px-3 py-1 rounded hover:bg-[#b4e600]/20 hover:text-[#b4e600] border border-transparent hover:border-white transition-all duration-300">Sign Up</a> -->
+                    <!-- Open Modal Button -->
+                    <button id="openModalBtn" class="rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-all duration-300  whitespace-nowrap capitalize cursor-pointer">
+                        Book a call
+                    </button>
 
-                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/z4codelearn/30min'});return false;" 
-class="px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition">
-  Book Now
-</button>
+                    <!-- Modal Container -->
+                    <div id="modal" class="fixed inset-0 flex bg-black/50 modal-bg hidden justify-center items-center z-50">
+                        <div class=" rounded-xl shadow-xl p-4 w-full max-w-5xl relative">
+                            <!-- Close Button -->
+                            <button id="closeModalBtn" class="absolute -top-10 right-3 text-white hover:text-[#b4e600] text-2xl transition-all duration-300">&times;</button>
 
-<script 
-  type="text/javascript" 
-  src="https://assets.calendly.com/assets/external/widget.js" async>
-</script>
-
+                            <!-- Calendly Inline Embed -->
+                            <div class="calendly-inline-widget rounded-lg" data-url="https://cal.com/z4codelearn/15min" style="min-width:320px;height:630px;"></div>
+                            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Desktop Menu End -->
