@@ -85,14 +85,48 @@
     nextPhrase();
     setInterval(nextPhrase, 5000); // Every 5 seconds, next phrase
 
+// This code handles the modal functionality for booking calls.
+// Get all buttons that have class 'book-call-btn'
+// All buttons with class 'book-call-btn' will trigger the modal
+// document.querySelectorAll('.book-call-btn').forEach(button => {
+//   button.addEventListener('click', () => {
+//     document.getElementById('modal').classList.remove('hidden');
+//   });
+// });
 
-    // This code handles the opening and closing of a modal dialog.
-    // It adds event listeners to buttons to show and hide the modal by toggling a 'hidden' class on the modal element.
-    // The modal is initially hidden and becomes visible when the open button is clicked, and hidden when the close button is clicked.
-    const openBtn = document.getElementById('openModalBtn');
-    const closeBtn = document.getElementById('closeModalBtn');
-    const modal = document.getElementById('modal');
+// // Close button
+// document.getElementById('closeModalBtn').addEventListener('click', () => {
+//   document.getElementById('modal').classList.add('hidden');
+// });
 
-    openBtn.addEventListener('click', () => modal.classList.remove('hidden'));
-    closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+// // ESC press
+// document.addEventListener('keydown', (e) => {
+//   if (e.key === 'Escape') {
+//     document.getElementById('modal').classList.add('hidden');
+//   }
+// });
 
+
+// Open any modal
+document.querySelectorAll('.open-modal-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const targetId = btn.getAttribute('data-target');
+    const modal = document.getElementById(targetId);
+    if (modal) modal.classList.remove('hidden');
+  });
+});
+
+// Close any modal
+document.querySelectorAll('.close-modal-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.modal');
+    if (modal) modal.classList.add('hidden');
+  });
+});
+
+// Optional: Close modal on ESC key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal').forEach(modal => modal.classList.add('hidden'));
+  }
+});

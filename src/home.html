@@ -11,7 +11,7 @@
         <link rel="icon" href="./images/PouchCareFAvicon.webp" type="image/x-icon" />
         <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
         <!-- Font Awesome CDN -->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -26,44 +26,51 @@
         <!-- Header Section Start -->
         <header class="bg-black text-white p-4 sticky top-0 z-50">
             <!-- Mobile Menu Start -->
-            <div class="flex justify-between items-center lg:hidden">
+            <div class="flex justify-between items-center md:hidden">
+                <!-- logo -->
                 <div class="">
-                    <a href="./index.html">
+                    <a href="./home.html">
                         <p class="text-white text-2xl font-semibold">Pouch Care<span class="text-[#b4e600] text-3xl">.</span></p>
                     </a>
                 </div>
                 <!-- Toggle Button -->
-                <div class="lg:hidden flex items-center justify-between gap-5">
-                    <div class="hidden md:flex gap-4">
-                        <a href="./login.html" class="text-white font-medium px-3 py-1 rounded hover:bg-[#b4e600]/10 border border-[#b4e600] transition-all duration-300">Login</a>
-                        <a href="./signup.html" class="bg-[#b4e600] text-black font-medium px-3 py-1 rounded hover:bg-[#b4e600]/20 hover:text-[#b4e600] border border-transparent hover:border-white transition-all duration-300">Sign Up</a>
-                    </div>
+                <div class="md:hidden flex items-center justify-between gap-5">
                     <button id="menu-toggle" class="text-white">
                     <!-- Hamburger Icon -->
-                        <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 hover:text-[#b4e600] transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                         <!-- Close Icon -->
-                        <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 hidden hover:text-[#b4e600] transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
             </div>
-            <!-- Mobile Menu Dropdown Start -->
+            <!-- Dropdown Menu Start -->
             <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-black/85 backdrop-blur-sm z-50 px-4 pt-5 pb-10 space-y-2 
             transition-all duration-300 ease-in-out transform translate-y-[-20px] opacity-0">
+            <!-- Menu Items -->
                 <ul class="flex flex-col gap-4 text-lg font-medium">
-                    <li><a href="#" class="text-white hover:text-[#b4e600]">Home</a></li>
-                    <li><a href="#" class="text-white hover:text-[#b4e600]">About Us</a></li>
-                    <li><a href="#" class="text-white hover:text-[#b4e600]">Services</a></li>
-                    <li><a href="#" class="text-white hover:text-[#b4e600]">Blogs</a></li>
-                    <li><a href="#" class="text-white hover:text-[#b4e600]">Contact Us</a></li>
+                    <li><a href="./home.html" class="text-white hover:text-[#b4e600]">Home</a></li>
+                    <li><a href="./about-us.html" class="text-white hover:text-[#b4e600]">About Us</a></li>
+                    <li><a href="./services.html" class="text-white hover:text-[#b4e600]">Services</a></li>
+                    <li><a href="./blogs.html" class="text-white hover:text-[#b4e600]">Blogs</a></li>
+                    <li><a href="./contact-us.html" class="text-white hover:text-[#b4e600]">Contact Us</a></li>
                 </ul>
                 <div class="flex gap-4 mt-10 md:hidden">
-                    <!-- <a href="#" class="text-white px-3 py-1 rounded hover:text-[#b4e600] border border-[#b4e600]">Login</a>
-                    <a href="#" class="bg-[#b4e600] text-black px-3 py-1 rounded hover:bg-[#b4e600]">Sign Up</a> -->
-                    
+                    <!-- Book a call -->
+                    <button data-target="modal-2" class="open-modal-btn rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-all duration-300 whitespace-nowrap capitalize cursor-pointer">Book a call</button>
+
+                    <div id="modal-2" class="modal hidden fixed top-80 px-5 inset-0 flex justify-center items-center bg-black z-50">
+                        <div class="rounded-xl shadow-xl p-4 w-full max-w-5xl relative bg-[#b4e600]">
+
+                            <button class="close-modal-btn absolute -top-4 -right-4 text-xl text-white hover:text-[#b4e600] transition-all duration-300 bg-black p-1 rounded-full">&times;</button>
+                            
+                            <div class="calendly-inline-widget rounded-lg" data-url="https://cal.com/z4codelearn/15min" style="min-width:320px;height:630px;"></div>
+                            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                        </div>
+                    </div>
                 </div>
                 <!-- Social links -->
                 <div class="flex gap-4 mt-10 text-center text-xl">
@@ -74,19 +81,22 @@
                     <a href="#"><i class="fa-brands fa-youtube text-white hover:text-[#b4e600]"></i></a>
                 </div>
             </div>
-            <!-- Mobile Menu Dropdown End -->
+            <!-- Dropdown Menu End -->
+            
             <!-- Mobile Menu End -->
 
             <!-- Desktop Menu -->
-            <div class="hidden container mx-auto lg:flex justify-between items-center">
+            <div class="hidden container mx-auto md:flex justify-between items-center">
+                <!-- logo -->
                 <div class="">
-                    <a href="./index.html">
+                    <a href="./home.html">
                         <p class="text-white text-2xl font-semibold">Pouch Care<span class="text-[#b4e600] text-3xl">.</span></p>
                     </a>
                 </div>
+                <!-- Menu Items -->
                 <ul class="hidden md:flex items-center gap-6 text-white font-medium">
                     <li class="relative group">
-                        <a class="transition-colors pb-1 text-[#b4e600]" href="./index.html">Home
+                        <a class="transition-colors pb-1 text-[#b4e600]" href="./home.html">Home
                             <span class="block h-0.5 bg-[#b4e600] rounded transition-all duration-300 w-full"></span>
                         </a>
                     </li>
@@ -111,21 +121,14 @@
                         </a>
                     </li>
                 </ul>
+                <!-- Buttons -->
                 <div class="flex gap-4">
-                    <!-- <a href="./login.html" class="text-white font-medium px-3 py-1 rounded hover:bg-[#b4e600]/10 border border-[#b4e600] transition-all duration-300">Login</a>
-                    <a href="./signup.html" class="bg-[#b4e600] text-black font-medium px-3 py-1 rounded hover:bg-[#b4e600]/20 hover:text-[#b4e600] border border-transparent hover:border-white transition-all duration-300">Sign Up</a> -->
-                    <!-- Open Modal Button -->
-                    <button id="openModalBtn" class="rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-all duration-300  whitespace-nowrap capitalize cursor-pointer">
-                        Book a call
-                    </button>
-
-                    <!-- Modal Container -->
-                    <div id="modal" class="fixed inset-0 flex bg-black/50 modal-bg hidden justify-center items-center z-50">
-                        <div class=" rounded-xl shadow-xl p-4 w-full max-w-5xl relative">
-                            <!-- Close Button -->
-                            <button id="closeModalBtn" class="absolute -top-10 right-3 text-white hover:text-[#b4e600] text-2xl transition-all duration-300">&times;</button>
-
-                            <!-- Calendly Inline Embed -->
+                    <!-- Book a call -->
+                    <button data-target="modal-1" class="open-modal-btn rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-all duration-300 whitespace-nowrap capitalize cursor-pointer">Book a call</button>
+                    <!-- Modal 1 -->
+                    <div id="modal-1" class="modal hidden fixed inset-0 px-5 flex justify-center items-center bg-black/80 z-50">
+                        <div class="rounded-xl shadow-xl p-4 w-full max-w-5xl relative bg-[#b4e600]">
+                            <button class="close-modal-btn absolute -top-4 -right-4 text-xl text-white hover:text-[#b4e600] transition-all duration-300 bg-black p-1 rounded-full">&times;</button>
                             <div class="calendly-inline-widget rounded-lg" data-url="https://cal.com/z4codelearn/15min" style="min-width:320px;height:630px;"></div>
                             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                         </div>
@@ -1472,25 +1475,25 @@
                         <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
                         <ul class="space-y-2">
                             <li class="w-32">
-                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="/home">
+                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="./home.html">
                                     <span class="w-1.5 h-1.5 bg-[#b4e600] rounded-full"></span>
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="/about"><span class="w-1.5 h-1.5 bg-[#b4e600] rounded-full"></span>About
+                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="./about-us.html"><span class="w-1.5 h-1.5 bg-[#b4e600] rounded-full"></span>About
                                 </a>
                             </li>
                             <li>
-                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="/services"><span class="w-1.5 h-1.5 bg-[#b4e600] rounded-full"></span>Services
+                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="./services.html"><span class="w-1.5 h-1.5 bg-[#b4e600] rounded-full"></span>Services
                                 </a>
                             </li>
                             <li>
-                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="/blogs"><span class="w-1.5 h-1.5 bg-[#b4e600] rounded-full"></span>Blogs
+                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="./blogs.html"><span class="w-1.5 h-1.5 bg-[#b4e600] rounded-full"></span>Blogs
                                 </a>
                             </li>
                             <li>
-                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="/contact-us">
+                                <a class="text-gray-400 hover:text-[#b4e600] transition-colors flex items-center gap-2" href="./contact-us.html">
                                     <span class="w-1.5 h-1.5 bg-[#b4e600] rounded-full"></span>Contact-Us
                                 </a>
                             </li>
@@ -1523,8 +1526,8 @@
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
                     <p class="text-gray-400 text-sm">Copyright © <!-- -->2025<!-- --> Pouch Care. All rights reserved.</p>
                     <div class="flex gap-4">
-                        <a class="text-gray-400 hover:text-[#b4e600] text-sm" href="/privacy">Privacy Policy</a>
-                        <a class="text-gray-400 hover:text-[#b4e600] text-sm" href="/terms">Terms of Service</a>
+                        <a class="text-gray-400 hover:text-[#b4e600] text-sm" href="./privacy.html">Privacy Policy</a>
+                        <a class="text-gray-400 hover:text-[#b4e600] text-sm" href="./terms.html">Terms of Service</a>
                     </div>
                 </div>
             </div>
@@ -1536,17 +1539,9 @@
 
 
 
-
-
-
-
-
-
-
-
         <!-- Js File -->
         <script src="./main.js"></script>
-
+        
     </body>
 </html>
 
