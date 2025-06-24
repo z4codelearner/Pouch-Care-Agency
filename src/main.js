@@ -84,29 +84,8 @@
 
     nextPhrase();
     setInterval(nextPhrase, 5000); // Every 5 seconds, next phrase
-
-// This code handles the modal functionality for booking calls.
-// Get all buttons that have class 'book-call-btn'
-// All buttons with class 'book-call-btn' will trigger the modal
-// document.querySelectorAll('.book-call-btn').forEach(button => {
-//   button.addEventListener('click', () => {
-//     document.getElementById('modal').classList.remove('hidden');
-//   });
-// });
-
-// // Close button
-// document.getElementById('closeModalBtn').addEventListener('click', () => {
-//   document.getElementById('modal').classList.add('hidden');
-// });
-
-// // ESC press
-// document.addEventListener('keydown', (e) => {
-//   if (e.key === 'Escape') {
-//     document.getElementById('modal').classList.add('hidden');
-//   }
-// });
-
-
+    
+// This code handles the opening and closing of modals on a webpage.
 // Open any modal
 document.querySelectorAll('.open-modal-btn').forEach(btn => {
   btn.addEventListener('click', () => {

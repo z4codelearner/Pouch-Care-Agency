@@ -60,12 +60,15 @@
                 </ul>
                 <div class="flex gap-4 mt-10 md:hidden">
                     <!-- Book a call -->
-                    <button data-target="modal-2" class="open-modal-btn rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-all duration-300 whitespace-nowrap capitalize cursor-pointer">Book a call</button>
+                    <button data-target="modal-call-1" class="open-modal-btn rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-all duration-300 whitespace-nowrap capitalize cursor-pointer">Book a call</button>
 
-                    <div id="modal-2" class="modal hidden fixed top-80 px-5 inset-0 flex justify-center items-center bg-black z-50">
+                    <div id="modal-call-1" class="modal hidden fixed top-80 px-5 inset-0 flex justify-center items-center bg-black z-50">
                         <div class="rounded-xl shadow-xl p-4 w-full max-w-5xl relative bg-[#b4e600]">
 
-                            <button class="close-modal-btn absolute -top-4 -right-4 text-xl text-white hover:text-[#b4e600] transition-all duration-300 bg-black p-1 rounded-full">&times;</button>
+                            <!-- Close Button -->
+                            <button class="close-modal-btn absolute -top-5 right-3 text-white bg-black hover:text-black hover:bg-[#b4e600] w-8 h-8 rounded-full text-2xl flex items-center justify-center transition-all duration-300 group cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x text-white w-5 h-5 group-hover:text-black transition-all duration-300" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </button>
                             
                             <div class="calendly-inline-widget rounded-lg" data-url="https://cal.com/z4codelearn/15min" style="min-width:320px;height:630px;"></div>
                             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -124,11 +127,15 @@
                 <!-- Buttons -->
                 <div class="flex gap-4">
                     <!-- Book a call -->
-                    <button data-target="modal-1" class="open-modal-btn rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-all duration-300 whitespace-nowrap capitalize cursor-pointer">Book a call</button>
+                    <button data-target="modal-call-2" class="open-modal-btn rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-all duration-300 whitespace-nowrap capitalize cursor-pointer">Book a call</button>
                     <!-- Modal 1 -->
-                    <div id="modal-1" class="modal hidden fixed inset-0 px-5 flex justify-center items-center bg-black/80 z-50">
+                    <div id="modal-call-2" class="modal hidden fixed inset-0 px-5 flex justify-center items-center bg-black/80 z-50">
                         <div class="rounded-xl shadow-xl p-4 w-full max-w-5xl relative bg-[#b4e600]">
-                            <button class="close-modal-btn absolute -top-4 -right-4 text-xl text-white hover:text-[#b4e600] transition-all duration-300 bg-black p-1 rounded-full">&times;</button>
+                            <!-- Close Button -->
+                            <button class="close-modal-btn absolute -top-5 right-3 text-white bg-black hover:text-black hover:bg-[#b4e600] w-8 h-8 rounded-full text-2xl flex items-center justify-center transition-all duration-300 group cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x text-white w-5 h-5 group-hover:text-black transition-all duration-300" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </button>
+
                             <div class="calendly-inline-widget rounded-lg" data-url="https://cal.com/z4codelearn/15min" style="min-width:320px;height:630px;"></div>
                             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                         </div>
@@ -563,7 +570,28 @@
                 <!-- Get a free quote -->
                 <div class="mt-10 flex flex-col items-center justify-center gap-5">
                     <p class="text-gray-300 text-center">Let's make something great work together.</p>
-                    <a href="#" class="bg-[#b4e600] text-black px-6 py-3 rounded-full hover:bg-white transition-colors capitalize cursor-pointer font-semibold">Get a Free Quote</a>
+                    <!-- Button -->
+                    <button class="open-modal-btn bg-[#b4e600] text-black px-6 py-3 rounded-full hover:bg-white transition-colors capitalize cursor-pointer font-semibold" data-target="modal-quote">Get a Free Quote</button>
+
+                    <!-- Get A Quote Modal -->
+                    <div id="modal-quote" class="modal hidden fixed px-4 inset-0 flex justify-center items-center bg-black/50 z-[9999]">
+                        <div class="bg-white rounded-xl shadow-xl p-6 w-full max-w-lg relative">
+                            <!-- Close Button -->
+                            <button class="close-modal-btn absolute -top-5 right-3 text-white bg-black hover:text-black hover:bg-[#b4e600] w-8 h-8 rounded-full text-2xl flex items-center justify-center transition-all duration-300 group cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x text-white w-5 h-5 group-hover:text-black transition-all duration-300" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </button>
+
+                            <!-- Modal Content -->
+                            <h2 class="text-xl font-semibold mb-4 text-black">Get A Quote</h2>
+                            <form class="space-y-4">
+                                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 rounded-md">
+                                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 rounded-md">
+                                <textarea placeholder="Your Requirements" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md"></textarea>
+                                <button type="submit" class="bg-black text-white font-medium px-4 py-2 rounded-md hover:text-[#b4e600] transition-all duration-300">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- section content End -->
                 <div class="p-2 mt-16 rounded-2xl max-w-5xl mx-auto" style="background:linear-gradient(90deg, #b4e600 0%, #b4e600 100%)">
