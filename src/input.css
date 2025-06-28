@@ -53,8 +53,8 @@
   
 /* Testimonial Marquee */
 .z4-marquee{
-  animation: scroll 80.64s linear 0s infinite;
-  -webkit-animation: scroll 80.64s linear 0s infinite running;
+  animation: scroll 10s linear 0s infinite;
+  -webkit-animation: scroll 10s linear 0s infinite;
 }
 
 .z4-marquee:hover {
@@ -71,7 +71,7 @@
 }
   100% {
     transform: translateX(-30%);
-    -webkit-transform: translateX(-50%);
+    -webkit-transform: translateX(-30%);
     -moz-transform: translateX(-30%);
     -ms-transform: translateX(-30%);
     -o-transform: translateX(-30%);
