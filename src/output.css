@@ -1950,11 +1950,11 @@
     -o-transform: translateX(-50%);
   }
 }
-.z4-marquee {
+.za4 .z4-marquee {
   animation: scroll 10s linear 0s infinite;
   -webkit-animation: scroll 10s linear 0s infinite;
 }
-.z4-marquee:hover {
+.za4 .z4-marquee:hover {
   animation-play-state: paused;
 }
 @keyframes scroll {
