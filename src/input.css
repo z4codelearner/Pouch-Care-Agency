@@ -22,7 +22,7 @@
     }
   }
 
-/* Marquee style start */
+/* Home Marquee style start */
 .marquee-track {
       display: flex;
       width: max-content;
@@ -46,15 +46,13 @@
         -o-transform: translateX(-50%);
 }
     }
-    /* Marquee style end */
-
-
+    /* Home Marquee style end */
 
   
 /* Testimonial Marquee */
 .z4-marquee{
-  animation: scroll 10s linear 0s infinite;
-  -webkit-animation: scroll 10s linear 0s infinite;
+  animation: scroll 30s linear 0s infinite;
+  -webkit-animation: scroll 30s linear 0s infinite;
 }
 
 .z4-marquee:hover {
@@ -62,19 +60,19 @@
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-}
-  100% {
-    transform: translateX(-30%);
-    -webkit-transform: translateX(-30%);
-    -moz-transform: translateX(-30%);
-    -ms-transform: translateX(-30%);
-    -o-transform: translateX(-30%);
-    -webkit-transform: translateX(-30%);
+    0% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+  }
+    100% {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+      -webkit-transform: translateX(-30%);
 }
 }
