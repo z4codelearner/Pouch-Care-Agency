@@ -16,7 +16,7 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-        <title>About Us</title>
+        <title>Pouchcare | Digital Marketing, SEO, and Web Development Experts</title>
 
         <!-- Tailwind Output CSS -->
         <link rel="stylesheet" href="./output.css" />
@@ -145,26 +145,111 @@
         </header>
         <!-- Header Section End -->
 
+                <!-- Hero Section Start -->
+        <section class="bg-[url('./images/bg-other-page.jpg')] bg-cover bg-center bg-no-repeat relative max-h-[350px] h-[350px]">
+            <div class="absolute inset-0 bg-black/65"></div>
+            <div class="container mx-auto flex flex-col items-center px-4 py-20 relative z-10">
+                <h1 class="text-white text-5xl font-bold mb-4">Contact <span class="text-[#b4e600]">Us</span></h1>
+                
+                <div class="flex items-center text-white/80 font-medium">
+                    <span class="flex items-center">
+                        <a class="hover:text-[#b4e600] transition-colors" href="/">Home</a>
+                        <span class="mx-1 text-2xl mt-3">*</span>
+                    </span>
+                    <span class="flex items-center">
+                        <span class="text-[#b4e600]/70 pointer-events-none">Contact Us</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section end -->
 
-                    
+        <!-- Marquee-style Start -->
+        <div class="bg-[#b4e600] py-4 overflow-hidden text-black font-semibold">
+            <div class="relative w-full overflow-hidden whitespace-nowrap">
+                <div class="marquee-track">
+                    <div class="flex gap-8 px-4 text-xl items-center">
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Analytics & Reporting</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Digital Marketing</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Brand Strategy</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>App Development</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Custom Branding</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>SEO Solutions</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>E-commerce Solutions</span>
+                        </div>
+                    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <!-- Repeat to make infinite scroll illusion -->
+                    <div class="flex gap-8 px-4 text-xl items-center">
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Analytics & Reporting</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Digital Marketing</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Brand Strategy</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>App Development</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>Custom Branding</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>SEO Solutions</span>
+                        </div>
+                        <div class="flex gap-1 text-2xl font-bold">
+                            <span class="text-4xl">*</span>
+                            <span>E-commerce Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Marquee-style End -->
 
 
 
@@ -280,6 +365,34 @@
 
         <!-- Js File -->
         <script src="./main.js"></script>
+
+        
+<script>
+    // This code handles the opening and closing of modals on a webpage.
+    // Open any modal
+    document.querySelectorAll('.open-modal-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const modal = document.getElementById(targetId);
+        if (modal) modal.classList.remove('hidden');
+    });
+    });
+
+    // Close any modal
+    document.querySelectorAll('.close-modal-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modal = btn.closest('.modal');
+        if (modal) modal.classList.add('hidden');
+    });
+    });
+
+    // Optional: Close modal on ESC key
+    document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.modal').forEach(modal => modal.classList.add('hidden'));
+    }
+    });
+</script>
         
     </body>
 </html>

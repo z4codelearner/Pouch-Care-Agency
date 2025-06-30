@@ -1419,27 +1419,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- Footer section Start -->
         <footer class="relative overflow-hidden bg-black/90 backdrop-blur-lg border-t border-white/10">
             <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-0">
@@ -1552,6 +1531,45 @@
 
         <!-- Js File -->
         <script src="./main.js"></script>
+
+
+
+
+
+<script>
+    // This code handles the opening and closing of modals on a webpage.
+    // Open any modal
+    document.querySelectorAll('.open-modal-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const modal = document.getElementById(targetId);
+        if (modal) modal.classList.remove('hidden');
+    });
+    });
+
+    // Close any modal
+    document.querySelectorAll('.close-modal-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modal = btn.closest('.modal');
+        if (modal) modal.classList.add('hidden');
+    });
+    });
+
+    // Optional: Close modal on ESC key
+    document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.modal').forEach(modal => modal.classList.add('hidden'));
+    }
+    });
+</script>
+
+
+
+
+
+
+
+
         
     </body>
 </html>
