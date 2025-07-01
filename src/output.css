@@ -905,6 +905,9 @@
   .border-\[\#b4e600\] {
     border-color: #b4e600;
   }
+  .border-\[\#b4e600\]\/10 {
+    border-color: color-mix(in oklab, #b4e600 10%, transparent);
+  }
   .border-\[\#b4e600\]\/30 {
     border-color: color-mix(in oklab, #b4e600 30%, transparent);
   }
@@ -940,6 +943,9 @@
   }
   .bg-\[\#b4e600\] {
     background-color: #b4e600;
+  }
+  .bg-\[\#b4e600\]\/10 {
+    background-color: color-mix(in oklab, #b4e600 10%, transparent);
   }
   .bg-\[\#bff747\] {
     background-color: #bff747;
