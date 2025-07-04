@@ -54,8 +54,8 @@
                     <li><a href="./index.html" class="text-white hover:text-[#b4e600]">Home</a></li>
                     <li><a href="./about-us.html" class="text-white hover:text-[#b4e600]">About Us</a></li>
                     <li><a href="./services.html" class="text-white hover:text-[#b4e600]">Services</a></li>
-                    <li><a href="./blog.html" class="text-white hover:text-[#b4e600]">Blog</a></li>
-                    <li><a href="./contact-us.html" class="text-[#b4e600]">Contact Us</a></li>
+                    <li><a href="./blog.html" class="text-[#b4e600]">Blog</a></li>
+                    <li><a href="./contact-us.html" class="text-white hover:text-[#b4e600]">Contact Us</a></li>
                 </ul>
                 <div class="flex gap-4 mt-10 md:hidden">
                     <!-- Book a call -->
@@ -113,13 +113,13 @@
                         </a>
                     </li>
                     <li class="relative group">
-                        <a class="transition-colors pb-1 hover:text-[#b4e600]" href="./blog.html">Blog
-                            <span class="block h-0.5 bg-[#b4e600] rounded transition-all duration-300 w-0 group-hover:w-full"></span>
+                        <a class="transition-colors pb-1 text-[#b4e600]" href="./blog.html">Blog
+                            <span class="block h-0.5 bg-[#b4e600] rounded transition-all duration-300 w-full"></span>
                         </a>
                     </li>
                     <li class="relative group">
-                        <a class="transition-colors pb-1 text-[#b4e600]" href="./contact-us.html">Contact Us
-                            <span class="block h-0.5 bg-[#b4e600] rounded transition-all duration-300 w-full"></span>
+                        <a class="transition-colors pb-1 hover:text-[#b4e600]" href="./contact-us.html">Contact Us
+                            <span class="block h-0.5 bg-[#b4e600] rounded transition-all duration-300 w-0 group-hover:w-full"></span>
                         </a>
                     </li>
                 </ul>
@@ -145,19 +145,35 @@
         </header>
         <!-- Header Section End -->
 
-                <!-- Hero Section Start -->
-        <section class="bg-[url('./images/bg-other-page.jpg')] bg-cover bg-center bg-no-repeat relative max-h-[350px] h-[350px]">
+        <!-- Hero Section Start -->
+        <section class="bg-[url('./images/bg-other-page.jpg')] bg-cover bg-center bg-no-repeat relative max-h-[350px] h-[350px] overflow-hidden">
             <div class="absolute inset-0 bg-black/65"></div>
             <div class="container mx-auto flex flex-col items-center px-4 py-20 relative z-10">
-                <h1 class="text-white text-5xl font-bold mb-4">Contact <span class="text-[#b4e600]">Us</span></h1>
-                
-                <div class="flex items-center text-white/80 font-medium">
+                <!-- Blog Title -->
+                <h1 class="text-white text-2xl md:text-4xl font-bold text-center mb-4">How to Boost User Engagement with UI/UX Design</h1>
+                <!-- Post Meta -->
+                <ul class="list-none mt-6">
+                    <li class="inline-block text-gray-400 mx-2 md:mx-5">
+                        <span class="text-[#b4e600] block">Author :</span> 
+                        <span class="block">Pouch Care</span> 
+                    </li>
+                    <li class="inline-block text-gray-400 mx-2 md:mx-5"> 
+                        <span class="text-[#b4e600] block">Date :</span> 
+                        <span class="block">21th February 2029</span>
+                    </li>
+                    <li class="inline-block text-gray-400 mx-2 md:mx-5"> 
+                        <span class="text-[#b4e600] block">Time :</span> 
+                        <span class="block">19 Min Read</span>
+                    </li>
+                </ul>
+
+                <div class="flex items-center text-white/80 font-medium absolute text-center z-10 bottom-0">
                     <span class="flex items-center">
-                        <a class="hover:text-[#b4e600] transition-colors" href="./index.html">Home</a>
+                        <a class="hover:text-[#b4e600] transition-colors" href="./blog.html">Blog</a>
                         <span class="mx-1 text-2xl mt-3">*</span>
                     </span>
                     <span class="flex items-center">
-                        <span class="text-[#b4e600]/70 pointer-events-none">Contact Us</span>
+                        <span class="text-[#b4e600]/70 pointer-events-none">Blog Detail</span>
                     </span>
                 </div>
             </div>
@@ -251,83 +267,100 @@
         </div>
         <!-- Marquee-style End -->
 
-
-        <!-- Contact Section Start -->
-        <section class="relative py-24 bg-black text-white overflow-hidden">
-            <!-- section overlay -->
+        <!-- Blog Section Start -->
+        <section class="bg-black text-white py-24 relative">
+            <!-- Overlay -->
             <div class="absolute inset-0 z-0">
-                <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
+                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
-            <div class="container mx-auto px-4">
-                <div class="bg-zinc-900/30 backdrop-blur-sm rounded-2xl border border-white/5 p-8">
-                    <div class="flex flex-col md:flex-row gap-10">
-                        <div class="md:w-1/2 relative">
-                            <div class="relative h-full rounded-2xl overflow-hidden">
-                                <img alt="Customer support" loading="lazy" width="600" height="800" decoding="async" data-nimg="1" class="object-cover h-[200px] md:h-[300px] w-full" src="./images/contect-img.jpg"><div class="mt-2">
-                                    <div class="flex flex-col gap-y-6">
-                                        <div class="flex items-center gap-4 border-b border-[#b4e600]/30 py-4">
-                                            <div class="bg-[#b4e600] rounded-full p-3">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5 text-black" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <p class="text-sm text-gray-300">Phone Number</p>
-                                                <p class="text-white font-medium">+987 654 3210</p>
-                                            </div>
-                                        </div>
-                                        <div class="flex items-center gap-4 border-b border-[#b4e600]/30 py-4">
-                                            <div class="bg-[#b4e600] rounded-full p-3">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5 text-black" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <p class="text-sm text-gray-300">Email Us</p>
-                                                <p class="text-white font-medium flex items-center gap-2">Info@pouchcare.com 
-                                                    <p class="pl-2">Contact@pouchcare.com</p>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+            <!-- Section content start -->
+             <div class="container mx-auto px-4 z-10 relative ">
+                <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
+                    <div class="lg:col-span-8 md:col-span-6">
+                        <div class="relative overflow-hidden rounded-md shadow-sm">
+                            <!-- Feature Image -->
+                            <img src="./images/post-3.jpg" alt="">
+
+                            <div class="p-6">
+                                <p class="text-slate-400">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script.</p>
+                                <p class="text-slate-400 italic border-x-4 border-[#b4e600] rounded-ss-xl rounded-ee-xl mt-3 p-3">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "</p>
+                                <p class="text-slate-400 mt-3">The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
                             </div>
                         </div>
-                        <div class="md:w-1/2 ">
-                            <div class="mb-8">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-[#b4e600] text-sm">* CONTACT US</span>
-                                </div>
-                                <h2 class="text-3xl md:text-4xl font-bold">Our <span class="text-[#b4e600]">team</span> is ready to help</h2>
-                                <p class="text-gray-300 mt-3">We're here to help! Reach out to us for expert guidance, personalized SEO solutions, or any questions you have.</p>
-                            </div>
-                            <form class="space-y-5">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                    <div>
-                                        <input class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="First Name" type="text">
+
+                        <div class="p-6 rounded-md shadow-sm mt-8">
+                            <h5 class="text-lg font-semibold">Leave A Comment:</h5>
+
+                            <form class="mt-8">
+                                <div class="grid lg:grid-cols-12 lg:gap-6">
+                                    <div class="lg:col-span-6 mb-5">
+                                        <div class="text-left">
+                                            <label for="name" class="font-semibold">Your Name:</label>
+                                            <input name="name" id="name" type="text" class="mt-3 w-full py-2 px-3 outline-none  focus:ring-0 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="Name :">
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="Last Name" type="text">
+    
+                                    <div class="lg:col-span-6 mb-5">
+                                        <div class="text-left">
+                                            <label for="email" class="font-semibold">Your Email:</label>
+                                            <input name="email" id="email" type="email" class="mt-3 w-full py-2 px-3 outline-none  focus:ring-0 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="Email :">
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <input class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="Phone No" type="tel">
+
+                                <div class="grid grid-cols-1">
+                                    <div class="mb-5">
+                                        <div class="text-left">
+                                            <label for="comments" class="font-semibold">Your Comment:</label>
+                                            <textarea name="comments" id="comments" class="mt-3 w-full py-2 px-3 outline-none  focus:ring-0 h-28 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="Message :"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <input class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="E-mail" type="email">
-                                </div>
-                                <div>
-                                    <textarea class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" rows="4" placeholder="Message"></textarea>
-                                </div>
-                                <button type="submit" class="w-42 py-3 rounded-md bg-[#b4e600] text-black font-semibold hover:bg-white transition-colors duration-300 flex items-center justify-center">Send Message
+                                <button type="submit" id="submit" name="send" class="py-2 px-5 flex items-center justify-center tracking-wide align-middle text-base text-center rounded-md bg-[#b4e600] text-black font-semibold hover:bg-white transition-colors duration-300">Send Message
                                     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 4L13 21L10 14M20 4L12 7.29412M20 4L10 14M10 14L3 11L7 9.35294" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                                 </button>
                             </form>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section End -->
 
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="sticky top-20">
+                            <h5 class="text-lg font-medium bg-[#b4e600]/10 rounded-md p-2 text-center">Author</h5>
+                            <div class="text-center mt-8">
+                                <img src="./images/team-1.jpg" class="h-20 w-20 mx-auto rounded-full mb-4 object-cover" alt="">
+
+                                <a href="" class="text-lg font-medium hover:text-[#b4e600] transition-all duration-500 ease-in-out h5">Pouch Care</a>
+                                <p class="text-slate-400">Content Writer</p>
+                            </div>
+
+                            <h5 class="text-lg font-medium bg-[#b4e600]/10 rounded-md p-2 text-center mt-8">Social sites</h5>
+                            <!-- author Social links start -->
+                            <div class="flex items-center justify-center gap-4 mt-4">
+                                
+                                <a target="_blank" class="w-8 h-8 rounded-full border border-[#b4e600] flex items-center justify-center hover:bg-[#b4e600] text-white hover:text-black transition-colors shadow" href="https://www.linkedin.com/in/linkedinPouchcareofficial">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin size-4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </a>
+
+                                <a target="_blank" class="w-8 h-8 rounded-full border border-[#b4e600] flex items-center justify-center hover:bg-[#b4e600] text-white hover:text-black transition-colors shadow" href="https://x.com/Pouchcareofficial">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-4 h-4" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                                </a>
+
+                                <a target="_blank" class="w-8 h-8 rounded-full border border-[#b4e600] flex items-center justify-center hover:bg-[#b4e600] text-white hover:text-black transition-colors shadow" href="https://www.facebook.com/pouchcaredm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-4 h-4" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                </a>
+                                
+                                <a target="_blank" class="w-8 h-8 rounded-full border border-[#b4e600] flex items-center justify-center hover:bg-[#b4e600] text-white hover:text-black transition-colors shadow" href="https://pouchcare.com">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                                </a>
+                        </div>
+                            <!--Author social links end-->
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!-- Section content end -->
+        </section>
+        <!-- Blog section End -->
 
         <!-- Footer section Start -->
         <footer class="relative overflow-hidden bg-black/90 backdrop-blur-lg border-t border-white/10">
@@ -405,7 +438,7 @@
                         <p class="text-gray-400 text-sm mb-4">Stay updated with our latest news and special offers.</p>
                         <form class="flex flex-col sm:flex-row gap-2 mb-4">
                             <input type="email" placeholder="Enter your email" class="rounded-md px-4 py-2 bg-transparent border border-white/20 text-white focus:outline-none focus:border-[#b4e600] w-full">
-                            <button type="submit" class="rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-colors duration-300 whitespace-nowrap shadow">Subscribe</button>
+                            <button type="submit" class="rounded-md px-5 py-2 border border-[#b4e600] bg-[#b4e600] text-black hover:text-white font-semibold hover:bg-[#b4e600]/10 transition-colors whitespace-nowrap shadow">Subscribe</button>
                         </form>
                         <div class="flex gap-4 mt-4">
                             <a target="_blank" class="w-8 h-8 rounded-full border border-[#b4e600] flex items-center justify-center hover:bg-[#b4e600] text-white hover:text-black transition-colors shadow" href="https://x.com/Pouchcareofficial">
@@ -442,7 +475,6 @@
         <!-- Js File -->
         <script src="./main.js"></script>
 
-        
 <script>
     // This code handles the opening and closing of modals on a webpage.
     // Open any modal
