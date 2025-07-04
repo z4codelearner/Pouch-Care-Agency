@@ -1525,52 +1525,20 @@
         <!-- Footer section End -->
 
 
+        <!-- Scroll To Top Button -->
+        <button id="scrollToTopBtn"
+        class="fixed bottom-6 right-6 p-1 bg-[#b4e600]/10 text-white rounded-full shadow-lg transition-opacity duration-500 opacity-0 pointer-events-none animate-bounce hover:bg-[#b4e600] group z-50"
+        title="Back to top">
+        <!-- Icon -->
+        <svg width="24px" height="36px" class="w-5 h-10 text-white group-hover:text-black transition-all duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 4L6 10M12 4L18 10M12 4L12 14.5M12 20V17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </button>
 
 
 
 
         <!-- Js File -->
-        <script src="./main.js"></script>
-
-
-
-
-
-<script>
-    // This code handles the opening and closing of modals on a webpage.
-    // Open any modal
-    document.querySelectorAll('.open-modal-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const targetId = btn.getAttribute('data-target');
-        const modal = document.getElementById(targetId);
-        if (modal) modal.classList.remove('hidden');
-    });
-    });
-
-    // Close any modal
-    document.querySelectorAll('.close-modal-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const modal = btn.closest('.modal');
-        if (modal) modal.classList.add('hidden');
-    });
-    });
-
-    // Optional: Close modal on ESC key
-    document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-        document.querySelectorAll('.modal').forEach(modal => modal.classList.add('hidden'));
-    }
-    });
-</script>
-
-
-
-
-
-
-
-
-        
+        <script defer src="./main.js"></script>
+ 
     </body>
 </html>
 
