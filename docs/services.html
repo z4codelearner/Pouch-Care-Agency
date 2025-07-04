@@ -352,20 +352,33 @@
                     <button class="open-modal-btn bg-[#b4e600] text-black px-6 py-3 rounded-full hover:bg-white transition-colors capitalize cursor-pointer font-semibold" data-target="modal-quote">Get a Free Quote</button>
 
                     <!-- Get A Quote Modal -->
-                    <div id="modal-quote" class="modal hidden fixed px-4 inset-0 flex justify-center items-center bg-black/50 z-[9999]">
-                        <div class="bg-white rounded-xl shadow-xl p-6 w-full max-w-lg relative">
+                    <div id="modal-quote" class="modal hidden fixed px-4 inset-0 flex justify-center items-center bg-black/90 z-40">
+                        <div class="backdrop-blur border border-[#b4e600]/10 bg-zinc-900/50 rounded-xl shadow-xl p-6 w-full max-w-lg relative z-50">
                             <!-- Close Button -->
-                            <button class="close-modal-btn absolute -top-5 right-3 text-white bg-black hover:text-black hover:bg-[#b4e600] w-8 h-8 rounded-full text-2xl flex items-center justify-center transition-all duration-300 group cursor-pointer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x text-white w-5 h-5 group-hover:text-black transition-all duration-300" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            <button class="close-modal-btn absolute -top-5 right-3 bg-[#b4e600] hover:bg-white w-8 h-8 rounded-full text-2xl flex items-center justify-center transition-all duration-300 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x  w-5 h-5 text-black transition-all duration-300" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                             </button>
 
                             <!-- Modal Content -->
-                            <h2 class="text-xl font-semibold mb-4 text-black">Get A Quote</h2>
-                            <form class="space-y-4">
-                                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 rounded-md">
-                                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 rounded-md">
-                                <textarea placeholder="Your Requirements" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md"></textarea>
-                                <button type="submit" class="bg-black text-white font-medium px-4 py-2 rounded-md hover:text-[#b4e600] transition-all duration-300">Submit</button>
+                            <h2 class="text-xl font-semibold mb-4 text-[#b4e600]">Get A Quote</h2>
+                            
+                            <form class="space-y-5">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                    <div>
+                                        <input class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="Full Name" type="text">
+                                    </div>
+                                    <div>
+                                        <input class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="Phone No" type="tel">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <input class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" placeholder="E-mail" type="email">
+                                </div>
+                                <div>
+                                    <textarea class="w-full px-4 py-3 rounded-md bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#b4e600]" rows="4" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="bg-[#b4e600] text-black font-medium px-4 py-2 rounded-md hover:bg-white transition-all duration-300">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -502,7 +515,7 @@
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
             <!-- section container start -->
-            <div class="container mx-auto px-4 relative z-10">
+            <div class="container mx-auto px-4 relative z-0">
                 <!-- section header -->
                 <div class="flex items-center justify-between lg:flex-row flex-col gap-1">
                     <div class="lg:w-1/2">
@@ -589,7 +602,7 @@
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
             <!-- section container start -->
-            <div class="container mx-auto px-4 flex flex-col gap-12 items-center relative z-10">
+            <div class="container mx-auto px-4 flex flex-col gap-12 items-center relative z-0">
                 <div class="w-full flex flex-col lg:flex-row justify-between items-center gap-12">
                     <div class="flex-1 aos-init aos-animate " data-aos="fade-right" data-aos-duration="1000">
                     <h3 class="flex items-center gap-2 mb-2 text-sm font-semibold uppercase tracking-widest ">
@@ -719,7 +732,7 @@
             <div class="flex-1 flex flex-col justify-between relative overflow-hidden mt-20">
                         <div class="relative w-full overflow-hidden whitespace-nowrap">
                             <div class="overflow-x-hidden flex flex-row relative w-full transform-none">
-                                <div class="z4-marquee flex-none min-w-full z-10 flex flex-row items-center" >
+                                <div class="z4-marquee flex-none min-w-full z-0 flex flex-row items-center" >
                                     <div class="flex flex-row items-center flex-none min-w-auto">
                                         <div class="transform-none">
                                             <div class="flex gap-8 px-4">
@@ -881,7 +894,7 @@
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
 
-            <div class="container mx-auto px-4">
+            <div class="container mx-auto px-4 relative z-0">
                 <!-- section header -->
                 <div class="flex items-center justify-between lg:flex-row flex-col gap-1">
                     <div class="lg:w-1/2">
@@ -971,7 +984,7 @@
             <div class="absolute inset-0">
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
-            <div class="container mx-auto px-4 relative z-10">
+            <div class="container mx-auto px-4 relative z-0">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <!-- section header -->
                 <div class="flex-1 flex flex-col gap-2">
@@ -1081,7 +1094,7 @@
             <div class="absolute inset-0">
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
-            <div class="container mx-auto px-4 relative z-10">
+            <div class="container mx-auto px-4 relative z-0">
                 <!-- section header -->
                 <div class="flex flex-col justify-between items-center gap-1 mb-8 lg:flex-row lg:gap-0">
                     <div class="md:w-2/3">
@@ -1144,7 +1157,7 @@
             <div class="absolute inset-0 z-0">
                 <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
-            <div class="container mx-auto px-4 relative z-10">
+            <div class="container mx-auto px-4 relative z-0">
                 <!-- section header -->
                 <div class="flex flex-col justify-between items-center gap-1 mb-8 lg:flex-row lg:gap-0">
                     <div class="md:w-2/3">
@@ -1243,7 +1256,7 @@
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
             <!-- section container start -->
-            <div class="container mx-auto px-4 relative z-10">
+            <div class="container mx-auto px-4 relative z-0">
                 <!-- section header -->
                 <div class="flex items-center justify-between lg:flex-row flex-col gap-1 mb-8">
                     <div class="lg:w-1/2">
@@ -1667,12 +1680,12 @@
                 <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-br from-[#b4e600]/10 via-transparent to-transparent pointer-events-none"></div>
             </div>
 
-            <div class="relative z-20 py-10 flex flex-col items-center w-full">
+            <div class="relative z-0 py-10 flex flex-col items-center w-full">
                 <div class="uppercase text-white text-sm font-semibold tracking-widest mb-2 text-center">LET'S COLLABORATE</div>
                 <div class="relative flex flex-col items-center">
                     <h2 class="text-white text-5xl font-extrabold leading-[3.2] text-center md:text-[7rem] md:leading-[1.2] xl:leading-32">LET'S WORK<br>TOGETHER</h2>
 
-                    <a class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30" href="./contact-us.html">
+                    <a class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0" href="./contact-us.html">
                         <div class="flex flex-col items-center justify-center w-28 h-28 rounded-full bg-[#b4e600] text-black font-bold text-lg shadow-lg  hover:bg-zinc-700 group duration-300 transition-all">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-6 h-6 -rotate-45 group-hover:rotate-0 duration-300 transition-all group-hover:text-white" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             <span class="text-sm duration-300 transition-all group-hover:text-white">Get In Touch</span>
